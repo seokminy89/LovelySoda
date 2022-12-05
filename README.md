@@ -1,2 +1,2 @@
 # LovelySoda
-App for my daughter
+App for my wife & daughter
