@@ -5,14 +5,14 @@ function Empty() {
   return (
     <View style={styles.block}>
       <Image
-        source={require('../../assets/images/black_moon.jpeg')}
+        //source={require('../../assets/images/black_moon.jpeg')}
         // source={require('../../assets/images/coco.jpeg')}
         //source={require('../../assets/images/young_and_happy.png')}
-        //source={require('../../assets/images/guam_beach.jpeg')}
+        source={require('../../assets/images/guam_beach.jpeg')}
         style={styles.image}
         resizeMode="cover"
       />
-      <Text style={styles.description}>야호! 할 일이 없습니다.</Text>
+      <Text style={styles.description}>아직 우리 소다의 일정이 없네요.</Text>
     </View>
   );
 }
@@ -30,7 +30,7 @@ const styles = StyleSheet.create({
   },
   image: {
     width: 300,
-    height: 200,
+    height: 400,
     borderRadius: 15,
     opacity: 0.8,
   },
