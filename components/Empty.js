@@ -8,11 +8,11 @@ function Empty() {
         //source={require('../../assets/images/black_moon.jpeg')}
         // source={require('../../assets/images/coco.jpeg')}
         //source={require('../../assets/images/young_and_happy.png')}
-        source={require('../../assets/images/guam_beach.jpeg')}
+        source={require('../../assets/images/soda.jpeg')}
         style={styles.image}
         resizeMode="cover"
       />
-      <Text style={styles.description}>아직 우리 소다의 일정이 없네요.</Text>
+      <Text style={styles.description}>소다 심심해요 일정 좀 잡아줘요.</Text>
     </View>
   );
 }
@@ -29,8 +29,8 @@ const styles = StyleSheet.create({
     color: '#9e9e9e',
   },
   image: {
-    width: 300,
-    height: 400,
+    width: 200,
+    height: 200,
     borderRadius: 15,
     opacity: 0.8,
   },

@@ -15,8 +15,12 @@ function AddToDo({onInsert}) {
   const [text, setText] = useState('');
 
   const onPress = () => {
-    onInsert(text);
-    setText('');
+    if (text === '') {
+      console.log('값이 없어요');
+    } else {
+      onInsert(text);
+      setText('');
+    }
     Keyboard.dismiss();
   };
 
@@ -29,7 +33,7 @@ function AddToDo({onInsert}) {
   return (
     <View style={styles.block}>
       <TextInput
-        placeholder="할 일을 입력하세요"
+        placeholder="여기에 소다와 함께할 일을 입력해줘요."
         style={styles.input}
         value={text}
         onChangeText={setText}
