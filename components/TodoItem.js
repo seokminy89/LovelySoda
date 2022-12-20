@@ -53,7 +53,7 @@ function ToDoItem({id, text, done, onToggle, onRemove}) {
         <TouchableOpacity
           style={{flex: 1, alignItems: 'center'}}
           onPress={remove}>
-          <Icon name="delete" size={32} color="black" />
+          <Icon name="delete" size={32} color="#DE5C4E" />
         </TouchableOpacity>
       ) : (
         <View style={styles.removePlaceholder} />
@@ -64,6 +64,11 @@ function ToDoItem({id, text, done, onToggle, onRemove}) {
 
 const styles = StyleSheet.create({
   item: {
+    backgroundColor: '#1B1B1B',
+    borderWidth: 2,
+    borderRadius: 20,
+    marginTop: 1,
+    // backgroundColor: 'red',
     flexDirection: 'row',
     // padding: 16,
     padding: 20,
@@ -81,13 +86,14 @@ const styles = StyleSheet.create({
   filled: {
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: 'black',
+    backgroundColor: '#00C842',
   },
   text: {
     alignSelf: 'center',
     flex: 1,
-    fontSize: 16,
-    color: '#212121',
+    fontSize: 18,
+    fontWeight: 'bold',
+    color: 'white',
   },
   lineThrough: {
     color: '#9e9e9e',

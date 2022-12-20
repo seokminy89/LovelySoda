@@ -34,6 +34,7 @@ function AddToDo({onInsert}) {
     <View style={styles.block}>
       <TextInput
         placeholder="여기에 소다와 함께할 일을 입력해줘요."
+        placeholderTextColor="#797979"
         style={styles.input}
         value={text}
         onChangeText={setText}
@@ -58,12 +59,16 @@ function AddToDo({onInsert}) {
 
 const styles = StyleSheet.create({
   block: {
-    backgroundColor: 'white',
-    height: 64,
+    backgroundColor: '#1B1B1B',
+    height: 80,
     paddingHorizontal: 16,
-    borderColor: '#bdbdbd',
-    borderTopWidth: 1,
-    borderBottomWidth: 1,
+    borderColor: '#797979',
+    borderTopWidth: 0.3,
+    borderLeftWidth: 0.3,
+    borderRightWidth: 0.3,
+    borderStyle: 'solid',
+    borderTopLeftRadius: 18,
+    borderTopRightRadius: 18,
     alignItems: 'center',
     flexDirection: 'row',
   },
@@ -71,13 +76,14 @@ const styles = StyleSheet.create({
     flex: 1,
     fontSize: 16,
     paddingVertical: 8,
+    color: 'white',
   },
   buttonStyle: {
     alignItems: 'center',
     justifyContent: 'center',
     width: 48,
     height: 48,
-    backgroundColor: '#282828',
+    backgroundColor: '#00C842',
     borderRadius: 24,
   },
   circleWrapper: {
