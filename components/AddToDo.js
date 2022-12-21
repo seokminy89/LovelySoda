@@ -60,12 +60,13 @@ function AddToDo({onInsert}) {
 const styles = StyleSheet.create({
   block: {
     backgroundColor: '#1B1B1B',
-    height: 80,
+    height: 70,
     paddingHorizontal: 16,
-    borderColor: '#797979',
-    borderTopWidth: 0.3,
-    borderLeftWidth: 0.3,
-    borderRightWidth: 0.3,
+    borderColor: '#2C2C31',
+    borderTopWidth: 0.5,
+    borderLeftWidth: 0.5,
+    borderRightWidth: 0.5,
+    // borderWidth: 1,
     borderStyle: 'solid',
     borderTopLeftRadius: 18,
     borderTopRightRadius: 18,

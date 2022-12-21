@@ -42,9 +42,10 @@ function ToDoItem({id, text, done, onToggle, onRemove}) {
         onPress={() => onToggle(id)}>
         <View style={[styles.circle, done && styles.filled]}>
           {done && (
-            <Image
-              source={require('../../assets/icons/check_white/check_white.png')}
-            />
+            <Icon name="check" size={16} color="white" />
+            // <Image
+            //   source={require('../../assets/icons/check_white/check_white.png')}
+            // />
           )}
         </View>
         <Text style={[styles.text, done && styles.lineThrough]}>{text}</Text>
